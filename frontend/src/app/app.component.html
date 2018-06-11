@@ -1,0 +1,12 @@
+<header>
+    <h1 class="heading">FH HAGENBERG - JSON-API EXAMPLE</h1>
+</header>
+
+<div class="area">
+    <div class="left" [class.fullWidth]="!jsonViewerService.Model" >
+        <router-outlet></router-outlet>
+    </div>
+    <div class="right" *ngIf="jsonViewerService.Model">
+        <app-json-viewer></app-json-viewer>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+@import 'src/app/style/colors';
+
+
+
+header {
+    position: fixed;
+    top: 0px;
+    height: $headerHeight;
+    width: 100%;
+    text-align: center;
+    background-color: $header-blue;
+    .heading{
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+    img {
+        width: 200px;
+        opacity: 0.4;
+        position: fixed;
+        top: 4rem;
+        right: 20px;
+    }
+}
+
+.area {
+    display: flex;
+    .left {
+        width: 70%;
+
+        &.fullWidth {
+            width: 100%;
+        }
+    }
+
+    .right {
+        width: 30%;
+    }
+}

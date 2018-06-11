@@ -1,0 +1,28 @@
+<div class="customer-list">
+  <button class="add-btn" (click)="onAddBtnClicked()">
+    <i class="fas fa-plus-circle"></i>
+  </button>
+
+  <button class="add-btn" (click)="jsonApi_fetchAllCustomers()">
+    <i class="fas fa-sync"></i>
+    <p>json:api</p>
+  </button>
+
+  <button class="add-btn" (click)="graphql_fetchAllCustomers()">
+    <i class="fas fa-sync"></i>
+    <p>GraphQl</p>
+  </button>
+
+  
+  <p class="loading-info">{{loadingInfo}}</p>
+
+  <div class="mode-grid">
+
+    <div *ngFor="let c of customers" class="customer-panel" (click)="onCustomerClick(c)">
+      <p class="name">{{ c.FirstName }} {{ c.LastName }}</p>
+
+      <p class="devices-info">{{c.Devices.Relations.length}} Devices</p>
+    </div>
+  </div>
+
+</div>

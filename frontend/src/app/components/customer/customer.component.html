@@ -1,0 +1,103 @@
+<div class="content">
+    <div class="table-content">
+        <div class="left">
+            <ng-container [ngTemplateOutlet]="customerTemplate"></ng-container>
+        </div>
+        <div class="right">
+            <ng-container [ngTemplateOutlet]="devicesTemplate"></ng-container>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- customer template -->
+<ng-template #customerTemplate>
+
+    <div class="form-content">
+
+        <form #customerForm="ngForm" (ngSubmit)="saveCustomer()" class="ui form" *ngIf="customer" (click)="jsonViewerService.Model = customer">
+
+            <div class="top-row">
+                <div class="field-wrap">
+                    <label [class.active]="customer.FirstName?.length > 0">
+                        First Name
+                        <span class="req">*</span>
+                    </label>
+                    <input type="text" class="form-control" name="FirstName" required [(ngModel)]="customer.FirstName" autocomplete="off">
+                </div>
+
+                <div class="field-wrap">
+                    <label [class.active]="customer.LastName?.length > 0">
+                        Last Name
+                        <span class="req">*</span>
+                    </label>
+                    <input type="text" class="form-control" name="LastName" required [(ngModel)]="customer.LastName">
+                </div>
+            </div>
+
+            <div class="field-wrap">
+                <label [class.active]="customer.Email?.length > 0">
+                    Email Address
+                </label>
+                <input type="email" class="form-control" name="Email" [(ngModel)]="customer.Email">
+            </div>
+
+
+            <div class="top-row">
+                <div class="field-wrap">
+                    <label [class.active]="customer.PostalCode?.length > 0">
+                        PLZ
+                    </label>
+                    <input type="text" class="form-control" name="PLZ" [(ngModel)]="customer.PostalCode">
+                </div>
+
+                <div class="field-wrap">
+                    <label [class.active]="customer.City?.length > 0">
+                        City
+                    </label>
+                    <input type="text" class="form-control" name="City" [(ngModel)]="customer.City">
+                </div>
+
+            </div>
+
+            <div class="field-wrap">
+                <label [class.active]="customer.Country?.length > 0">
+                    Country
+                </label>
+                <input type="text" class="form-control" name="Country" [(ngModel)]="customer.Country">
+            </div>
+
+
+            <button type="submit" class="button button-block" [disabled]="!customerForm.valid" >Save</button>
+
+
+        </form>
+
+    </div>
+</ng-template>
+
+<!-- devices template -->
+<ng-template #devicesTemplate>
+    <h6 class="devices-title" >Devices [{{customer?.Devices.Relations.length}}]</h6>
+
+    <div *ngFor="let deviceRelation of customer?.Devices.Relations" class="device-entry" [class.dirty]="deviceRelation.Data?.DirtyAttributes"
+        (click)="onDeviceClicked(deviceRelation.Data)"
+    >
+        <i class="fas fa-microchip"></i>
+
+        <ng-container *ngIf="deviceRelation.Data; else elseBlock">
+            <input type="text" class="form-control" name="IP" [(ngModel)]="deviceRelation.Data.MacAddress">
+        </ng-container>
+        <ng-template #elseBlock>
+            <a (click)="loadDeviceRelation(deviceRelation)">load</a>
+        </ng-template>
+
+    </div>
+
+    <button class="add-btn" (click)="addDevice()" [disabled]="!customer?.Id" >
+        <i class="fas fa-plus-circle"></i>
+    </button>
+
+</ng-template>

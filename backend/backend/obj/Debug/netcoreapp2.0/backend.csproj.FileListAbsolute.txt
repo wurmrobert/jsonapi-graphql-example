@@ -1,0 +1,11 @@
+/Users/robertwurm/CloudStation/FH Hagenberg/Master/2. Semester/SVE/sve-project/backend/backend/obj/Debug/netcoreapp2.0/backend.csprojResolveAssemblyReference.cache
+/Users/robertwurm/CloudStation/FH Hagenberg/Master/2. Semester/SVE/sve-project/backend/backend/obj/Debug/netcoreapp2.0/backend.csproj.CoreCompileInputs.cache
+/Users/robertwurm/CloudStation/FH Hagenberg/Master/2. Semester/SVE/sve-project/backend/backend/obj/Debug/netcoreapp2.0/backend.AssemblyInfoInputs.cache
+/Users/robertwurm/CloudStation/FH Hagenberg/Master/2. Semester/SVE/sve-project/backend/backend/obj/Debug/netcoreapp2.0/backend.AssemblyInfo.cs
+/Users/robertwurm/CloudStation/FH Hagenberg/Master/2. Semester/SVE/sve-project/backend/backend/bin/Debug/netcoreapp2.0/backend.deps.json
+/Users/robertwurm/CloudStation/FH Hagenberg/Master/2. Semester/SVE/sve-project/backend/backend/bin/Debug/netcoreapp2.0/backend.runtimeconfig.json
+/Users/robertwurm/CloudStation/FH Hagenberg/Master/2. Semester/SVE/sve-project/backend/backend/bin/Debug/netcoreapp2.0/backend.runtimeconfig.dev.json
+/Users/robertwurm/CloudStation/FH Hagenberg/Master/2. Semester/SVE/sve-project/backend/backend/bin/Debug/netcoreapp2.0/backend.dll
+/Users/robertwurm/CloudStation/FH Hagenberg/Master/2. Semester/SVE/sve-project/backend/backend/bin/Debug/netcoreapp2.0/backend.pdb
+/Users/robertwurm/CloudStation/FH Hagenberg/Master/2. Semester/SVE/sve-project/backend/backend/obj/Debug/netcoreapp2.0/backend.dll
+/Users/robertwurm/CloudStation/FH Hagenberg/Master/2. Semester/SVE/sve-project/backend/backend/obj/Debug/netcoreapp2.0/backend.pdb

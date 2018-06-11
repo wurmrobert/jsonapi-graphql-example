@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="backend" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="backend.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="CustomersController.cs" t="Include" />
+        </e>
+        <e p="Data" t="Include">
+          <e p="DbInitializer.cs" t="Include" />
+          <e p="MasterdataContext.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20180607211336_first-customer.cs" t="Include" />
+          <e p="20180607211336_first-customer.Designer.cs" t="Include" />
+          <e p="20180609130639_AddJsonApi.cs" t="Include" />
+          <e p="20180609130639_AddJsonApi.Designer.cs" t="Include" />
+          <e p="20180609131011_AddAttributes.cs" t="Include" />
+          <e p="20180609131011_AddAttributes.Designer.cs" t="Include" />
+          <e p="MasterdataContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="Customer.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.0" t="Include">
+              <e p="backend.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="wwwroot" t="Include" />
+      </e>
+      <e p="backend.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_backend.1744633265.00" t="ExcludeRecursive" />
+  </component>
+</project>

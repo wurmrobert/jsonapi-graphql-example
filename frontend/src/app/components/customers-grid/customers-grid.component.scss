@@ -1,0 +1,61 @@
+@import 'src/app/style/colors';
+
+.loading-info {
+    text-align: center;    
+    color: yellow;
+}
+
+.customer-list {
+    margin-top: $headerHeight;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 40px;
+}
+
+
+.mode-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    grid-gap: 1rem;
+    justify-content: center;
+    align-content: flex-start;
+    text-align: center;
+    
+    /* boring properties: */
+    margin: 2vh auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    overflow: auto;
+    
+    .name {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 62px;
+    }
+
+    .devices-info {
+        font-size: 10px;
+    }
+}
+
+
+.customer-panel {
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $border-color-dark;
+    &:hover {
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 4px 0 rgba(0, 0, 0, 0.12), 0 1px 2px -1px rgba(0, 0, 0, 0.3);                    
+    }
+}
+
+.add-btn {
+    margin-right: 20px;
+    font-size: 20px;
+    p {
+        font-size: 8px;
+    }
+}

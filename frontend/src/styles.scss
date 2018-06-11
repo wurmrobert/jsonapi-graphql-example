@@ -1,0 +1,39 @@
+@import 'src/app/style/colors';
+
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: $background-color-page;
+    color: $font-color;
+}
+
+
+.add-btn {
+    font-size: 28px;
+    background-color: transparent;
+    color: $font-color;
+}
+
+button {
+    cursor: pointer;
+}
+
+button[disabled] {
+    opacity: 0.4;
+    cursor: not-allowed;
+}

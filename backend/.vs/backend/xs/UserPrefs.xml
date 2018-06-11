@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{496B7575-F9CA-4FF1-B1B2-A1629025EEB9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="backend/Data/DbInitializer.cs">
+    <Files>
+      <File FileName="backend/Models/Customer.cs" Line="6" Column="27" />
+      <File FileName="backend/Data/MasterdataContext.cs" Line="6" Column="35" />
+      <File FileName="backend/Startup.cs" Line="19" Column="9" />
+      <File FileName="backend/appsettings.json" Line="1" Column="1" />
+      <File FileName="backend/appsettings.Development.json" Line="14" Column="1" />
+      <File FileName="backend/Data/DbInitializer.cs" Line="16" Column="43" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.backend PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
